@@ -1,0 +1,77 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.skills-container {
+    padding: 20px;
+    text-align: center;
+    background: #f4f4f4;
+}
+
+.skills-container h1 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.skills-flex {
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.skill-card {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    margin: 10px;
+    flex: 1 1 calc(30% - 20px); /* Responsive card width */
+    min-width: 250px; /* Minimum width for cards */
+    text-align: left;
+}
+
+.skill-name {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.star-rating {
+    font-size: 20px;
+    color: #FFD700; /* Gold color for stars */
+}
+
+.star {
+    margin-right: 2px;
+}
+
+.star.filled {
+    color: #FFD700; /* Gold color for filled stars */
+}
+
+.skill-level {
+    margin-top: 5px;
+    font-size: 14px;
+    color: #555;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+    .skill-card {
+        flex: 1 1 calc(45% - 20px); /* Adjust card width for smaller screens */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .skill-card {
+        flex: 1 1 100%; /* Full width on very small screens */
+    }
+}
